@@ -57,7 +57,6 @@ Run all network diagnostics and performance tests:
 
 ## Reporting
 - Results from each run are saved in the reports/ folder as JSON and HTML files.
-- The HTML report summarizes test outcomes, including pass/fail statuses and performance graphs.
 - Packet captures (pcap files) are saved in the captures/ folder for deeper analysis.
 
 ##### Note: This project is a personal and educational portfolio project. It is not intended for redistribution or external use.
