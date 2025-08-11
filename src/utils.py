@@ -2,21 +2,22 @@ import json
 import os
 from datetime import datetime
 
-LOG_FILE = os.path.join('captures', 'network_diag.log')
-
 def save_report(data, path='reports/report.json'):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, 'w') as f:
         json.dump(data, f, indent=2)
 
-def log(msg):
-    now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    line = f"[{now}] {msg}"
-    print(line)
+def log(msg, level='INFO'):
+    now = datetime.now()
+    timestamp = now.strftime('%Y-%m-%d %H:%M:%S')
+    level = level.upper()
+    log_msg = f"[{timestamp}] [{level}] {msg}"
 
-    # Make sure captures/ folder exists
-    os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
+    print(log_msg)
 
-    # Append log line to file
-    with open(LOG_FILE, 'a') as f:
-        f.write(line + '\n')
+    log_dir = 'captures'
+    os.makedirs(log_dir, exist_ok=True)
+    log_file = os.path.join(log_dir, now.strftime('%Y-%m-%d') + '.log')
+    
+    with open(log_file, 'a') as f:
+        f.write(log_msg + '\n')
