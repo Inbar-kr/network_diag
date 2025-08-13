@@ -59,4 +59,11 @@ Run all network diagnostics and performance tests:
 - Results from each run are saved in the reports/ folder as JSON and HTML files.
 - Packet captures (pcap files) are saved in the captures/ folder for deeper analysis.
 
-##### Note: This project is a personal and educational portfolio project. It is not intended for redistribution or external use.
+### Demo: Analyzing a Network Capture (pcap)
+
+The example below demonstrates opening a sample pcap file, applying a filter to focus on specific traffic, and inspecting the packet details. The GIF shows how network_diag makes it easy to explore and analyze network activity quickly.
+
+![Network Capture Demo](docs/network_capture_demo.gif)
+
+
+###### Note: This project is a personal and educational portfolio project. It is not intended for redistribution or external use.
