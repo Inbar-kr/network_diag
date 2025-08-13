@@ -1,5 +1,8 @@
 # Network Diagnostics & Performance Testing Automation
 
+* **Stack:** Python, iperf3, GitHub Actions
+* **Outcome:** Automated suite for validating network interface configurations, throughput, and DNS resolution on Ubuntu systems.
+
 ## Project Overview  
 network_diag is an automated network diagnostics and performance testing suite built with Python designed to validate key networking components and protocols on Ubuntu systems. It automates checking NIC status, IP configuration, MTU/jumbo frames support, link up/down monitoring, DNS resolution, packet loss, and throughput testing (TCP/UDP) using tools like iperf3.
 
