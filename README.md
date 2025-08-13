@@ -1,6 +1,6 @@
 # Network Diagnostics & Performance Testing Automation
 
-* **Stack:** Python, iperf3, GitHub Actions
+* **Stack:** Python, iperf3
 * **Outcome:** Automated suite for validating network interface configurations, throughput, and DNS resolution on Ubuntu systems.
 
 ## Project Overview  
